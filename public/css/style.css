@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    font-family: "Poppins";
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(46, 46, 46);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+nav {
+    margin-bottom: 20px;
+}
+
+nav ul {
+    display: flex;
+    padding: 0;
+    gap: 10px;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 5px 20px;
+    background: rgb(97, 97, 97);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+nav ul li:hover {
+    background: rgb(127, 127, 127);
+}
+
+nav ul li a {
+    color: #fff;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+}
+
+table {
+    margin-top: 20px;
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+table td, table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+  
+table tr:nth-child(even){background-color: #f2f2f2;}
+  
+table tr:hover {background-color: #ddd;}
+  
+table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #292929;
+    color: white;
+}
+
+.btn {
+    display: inline-flex;
+    margin-bottom: 20px;   
+    padding: 5px 20px;
+    background: rgb(16, 164, 117);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    color: #fff;
+}
+
+.btn:hover {
+    text-decoration: none;
+    background:rgb(23, 208, 150);
+}
+
+input, select {
+    width: 100%;
+    padding: 5px;
+}
+
+input[type=submit] {
+    width: 100px;
+    margin-top: 15px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.cards {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    background: rgb(216, 216, 216);
+    cursor: pointer;
+}
+
+.card i {
+    font-size: 30px;
+    color: #b32b48;
+}
+
+.card:hover {
+    background: rgb(196, 196, 196);
+}
+
+@media (max-width: 650px) {
+
+    nav ul {
+        flex-direction: column;
+    }
+    .card {
+        width: 100%;
+    }
+}
